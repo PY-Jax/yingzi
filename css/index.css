@@ -1,0 +1,88 @@
+html {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+body {/*#ffc0cb  #ffc0e3*/
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  background:linear-gradient(0deg,  #fbacba 0%, #fd91ff 100%);
+  animation: gradientChange 10s infinite;
+
+}
+@keyframes gradientChange  {
+		0% {
+        background: linear-gradient(30deg,  #fbacba 0%, #fd91ff 100%);
+    }
+    10% {
+        background: linear-gradient(60deg,  #fbacba 0%, #fd91ff 100%);
+    }
+		20% {
+        background: linear-gradient(90deg,  #fbacba 0%, #fd91ff 100%);
+    }
+    30% {
+        background: linear-gradient(120deg,  #fbacba 0%, #fd91ff 100%);
+    }
+    40% {
+        background: linear-gradient(150deg,  #fbacba 0%, #fd91ff 100%);
+    }
+    50% {
+        background: linear-gradient(180deg,  #fbacba 0%, #fd91ff 100%);
+    }
+    60% {
+        background: linear-gradient(210deg,  #fbacba 0%, #fd91ff 100%);
+    }
+    70% {
+        background: linear-gradient(240deg,  #fbacba 0%, #fd91ff 100%);
+    }
+    80% {
+        background: linear-gradient(270deg,  #fbacba 0%, #fd91ff 100%);
+    }
+    90% {
+        background: linear-gradient(300deg,  #fbacba 0%, #fd91ff 100%);
+    }
+    100% {
+        background: linear-gradient(330deg,  #fbacba 0%, #fd91ff 100%);
+    }
+}
+p {
+  color: #222;
+  font-size: 1.5em;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+.content {
+  position: relative;
+  z-index: 100;
+  padding-bottom: 100px;
+}
+
+.content a:hover {
+  text-decoration: none;
+}
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+@media only screen and (max-width: 560px) {
+  body, h1 {
+    width: 95%;
+  }
+  h1 {
+    font-size: 6em;
+    margin: 0 0 1em;
+  }
+}

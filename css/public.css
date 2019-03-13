@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0 !important;
+}
+body{-webkit-overflow-scrolling: touch; /* ios5+ */}
+p.start-gradient {
+  font-family: helvetica;
+  background: -webkit-linear-gradient(left, cornflowerblue , #fe5d4b);     /* 背景色渐变 */
+  -webkit-background-clip: text;         /* 规定背景的划分区域 */
+  -webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
+}
+p.start-gradient a{
+	font-family: helvetica;
+  background: red;     /* 背景色渐变 */
+  -webkit-background-clip: text;         /* 规定背景的划分区域 */
+  -webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
+	text-decoration: none;
+}
+.tl{
+	text-align: left;
+	text-indent: 2em;
+}
+.font_tran1{
+	transform: rotate(-10deg);
+	padding-bottom: 10px;
+}
+
+.danmu {
+	display: block;
+	width: 80%;
+  	position: fixed;
+  	left: 100%;
+  	animation: danmu 8s linear 0s infinite;
+}
+p.danmu_color{
+	font-family: helvetica;
+	background: -webkit-linear-gradient(left, red , #8100f7);     /* 背景色渐变 */
+	-webkit-background-clip: text;         /* 规定背景的划分区域 */
+	-webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
+	font-size: 22px;
+}
+@keyframes danmu {
+	from {
+    left: 100%;
+    transform: translateX(0);
+	}
+	to {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
+.none{opacity: 0;}
